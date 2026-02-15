@@ -1,0 +1,54 @@
+<section class="contact-section">
+  <div class="container py-5">
+    <!-- Page Header -->
+    <div class="row mb-5">
+      <div class="col-12 text-center" data-aos="fade-up">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-description">We'd love to hear from you! Send us a message and our team will get back to you shortly.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-card" data-aos="fade-up">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label>Name</label>
+                <input type="text" formControlName="name" class="form-control" placeholder="Your Name">
+                <div class="error" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+                  Name is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>Mobile Number</label>
+                <input type="number" formControlName="mobileNumber" class="form-control" placeholder="Your Mobile Number">
+                <div class="error" *ngIf="contactForm.get('mobileNumber')?.touched && contactForm.get('mobileNumber')?.invalid">
+                  Valid Mobile Number is required
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Message</label>
+              <textarea formControlName="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+              <div class="error" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                Message is required (min 10 characters)
+              </div>
+            </div>
+            <div class="text-center">
+              <!-- <button class="btn btn-primary px-5 py-2" type="submit" [disabled]="contactForm.invalid">Send Message</button>
+                -->
+              <button class="btn btn-primary px-5 py-2" type="submit" [disabled]="isLoading">
+  <span *ngIf="!isLoading">Submit</span>
+  <span *ngIf="isLoading">Sending...</span>
+</button>
+            </div>
+          </form>
+          <div class="success mt-3 text-center" *ngIf="submitted">
+            ✅ Thank you! We have received your message.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

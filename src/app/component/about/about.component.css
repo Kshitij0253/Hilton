@@ -1,0 +1,399 @@
+/* Page Header */
+    .page-header {
+      background: linear-gradient(rgba(10, 77, 166, 0.8), rgba(0, 0, 0, 0.7)), 
+                  url('https://images.pexels.com/photos/3862131/pexels-photo-3862131.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      color: var(--white);
+      text-align: center;
+    }
+    
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .page-description {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .breadcrumb {
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .breadcrumb-item, 
+    .breadcrumb-item a {
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+    
+    .breadcrumb-item.active {
+      opacity: 0.8;
+    }
+    
+    .breadcrumb-item + .breadcrumb-item::before {
+      color: var(--white);
+      opacity: 0.7;
+    }
+    
+    /* Company Overview */
+    .company-overview {
+      background-color: var(--white);
+    }
+    
+    .about-content .section-title h2 {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    
+    .about-content .section-title h2::after {
+      left: 0;
+      transform: none;
+    }
+    
+    .about-content p {
+      margin-bottom: var(--space-3);
+      color: var(--gray-700);
+      line-height: 1.7;
+    }
+    
+    .about-image {
+      position: relative;
+      padding: 20px;
+    }
+    
+    .about-image img {
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .experience-badge {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 15px 25px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      transform: translateY(25%);
+    }
+    
+    .experience-badge .years {
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: block;
+      line-height: 1;
+    }
+    
+    .experience-badge .text {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    
+    /* Mission & Vision */
+    .mission-vision {
+      background-color: var(--gray-100);
+    }
+    
+    .mission-card,
+    .vision-card {
+      background-color: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: 30px;
+      height: 100%;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .mission-card:hover,
+    .vision-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .mission-card::before,
+    .vision-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+    }
+    
+    .mission-card::before {
+      background-color: var(--primary);
+    }
+    
+    .vision-card::before {
+      background-color: var(--accent);
+    }
+    
+    .mission-card .icon,
+    .vision-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .mission-card .icon {
+      color: var(--primary);
+    }
+    
+    .vision-card .icon {
+      color: var(--accent);
+    }
+    
+    .mission-card h3,
+    .vision-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--gray-900);
+    }
+    
+    .mission-card p,
+    .vision-card p {
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+    
+    /* Core Values */
+    .core-values {
+      background-color: var(--white);
+    }
+    
+    .value-card {
+      background-color: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: 30px;
+      height: 100%;
+      transition: var(--transition);
+      text-align: center;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .value-icon {
+      width: 80px;
+      height: 80px;
+      background-color: rgba(10, 77, 166, 0.1);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 2rem;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+    
+    .value-card:hover .value-icon {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+    
+    .value-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 15px;
+      color: var(--gray-900);
+    }
+    
+    .value-card p {
+      color: var(--gray-700);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    
+    /* Team Section */
+    .team-section {
+      background-color: var(--gray-100);
+    }
+    
+    .team-card {
+      background-color: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: var(--transition);
+      height: 100%;
+    }
+    
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .team-image {
+      height: 250px;
+      overflow: hidden;
+    }
+    
+    .team-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .team-card:hover .team-image img {
+      transform: scale(1.1);
+    }
+    
+    .team-info {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .team-info h4 {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+      color: var(--gray-900);
+      font-weight: 600;
+    }
+    
+    .team-info .position {
+      color: var(--primary);
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    
+    .team-info .bio {
+      color: var(--gray-700);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .social-links a {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--gray-100);
+      color: var(--gray-800);
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: var(--space-6) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg') center/cover no-repeat;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-content h2 {
+      color: var(--white);
+      margin-bottom: var(--space-2);
+      font-weight: 600;
+    }
+    
+    .cta-content p {
+      opacity: 0.9;
+      margin-bottom: var(--space-4);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta-buttons .btn {
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+    }
+    
+    .cta-buttons .btn-secondary {
+      background-color: var(--white);
+      color: var(--primary);
+      border-color: var(--white);
+    }
+    
+    .cta-buttons .btn-secondary:hover {
+      background-color: transparent;
+      color: var(--white);
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+      .page-header {
+        padding: 80px 0;
+      }
+      
+      .page-title {
+        font-size: 2rem;
+      }
+      
+      .experience-badge {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+        transform: none;
+      }
+      
+      .about-image {
+        margin-top: 40px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .page-header {
+        padding: 60px 0;
+      }
+      
+      .page-title {
+        font-size: 1.75rem;
+      }
+      
+      .cta-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0 !important;
+      }
+    }

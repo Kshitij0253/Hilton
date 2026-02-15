@@ -1,53 +1,259 @@
-<div class="container my-5">
-  <div class="background-image-wrapper">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="display-4">Welcome to Hilton MicroSwitch Co.</h1>
-        <p class="lead">Leading provider of industrial automation solutions</p>
-      </div>
-    </div>
-  </div>
 
- 
-
-  <!-- <div class="row my-5">
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Industrial Automation</h5>
-          <p class="card-text">We provide cutting-edge automation solutions for various industries.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
+    <section class="hero-section">
+      <div class="parallax-bg"></div>
+      <div class="hero-content container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="hero-title" data-aos="fade-up">Welcome to Hilton MicroSwitch Co.</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+              Leading provider of industrial automation solutions
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+              <a routerLink="/products" class="btn btn-primary me-3">
+                Explore Products
+              </a>
+              <a routerLink="/contact" class="btn btn-secondary">
+                Contact Us
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Robotic Systems</h5>
-          <p class="card-text">Our robotic systems increase productivity and efficiency in your operations.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
+      <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ffffff" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,69.3C384,64,480,96,576,128C672,160,768,192,864,186.7C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Custom Solutions</h5>
-          <p class="card-text">Tailored automation solutions to meet your specific business needs.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="about-us-section my-5">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="mb-4">About Us</h2>
-        <p class="lead">As an authorized distributor of Honeywell, Hilton MicroSwitch is a well-known company based in Delhi. We are a leading name in the market, offering a wide range of products such as limit switches, PID controllers, micro switches, humidity sensors, pressure transducers, UV sensors, water flow switches, power relays, sequence controllers, smoke detectors, modulating motors, safety limit switches, and motion sensors.</p>
-        <p class="lead">Our products are compact, easy to install, aesthetically pleasing, and safe to use. They are manufactured by our highly skilled and experienced professionals using the best technology to meet high-quality standards. Available in various features, sizes, and designs, our products ensure smooth finishes, perfect textures, and quality assurance, all at cost-effective rates. These qualities make our products highly appreciated by our customers.</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-</div>
-<app-products></app-products>
+    <!-- About Us Section -->
+    <section class="about-section section">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-aos="fade-up">About Us</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Learn more about our expertise and commitment to quality</p>
+        </div>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="about-content">
+              <h3>Authorized Distributor of Honeywell</h3>
+              <p>As an authorized distributor of Honeywell, Hilton MicroSwitch is a well-known company based in Delhi. We are a leading name in the market, offering a wide range of products such as limit switches, PID controllers, micro switches, humidity sensors, pressure transducers, UV sensors, water flow switches, power relays, sequence controllers, smoke detectors, modulating motors, safety limit switches, and motion sensors.</p>
+              <p>Our products are compact, easy to install, aesthetically pleasing, and safe to use. They are manufactured by our highly skilled and experienced professionals using the best technology to meet high-quality standards.</p>
+              <a routerLink="/about" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-image-container">
+              <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg" alt="Industrial Automation" class="img-fluid rounded about-image">
+              <div class="about-experience">
+                <span class="years">25+</span>
+                <span class="text">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Products Section -->
+    <section class="products-section section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-aos="fade-up">Our Featured Products</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Discover our high-quality automation solutions</p>
+        </div>
+        
+        <!-- <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <app-product-card 
+              [product]="{
+                id: 1,
+                name: 'Micro Switches',
+                image: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg',
+                price: '₹1,200',
+                description: 'High-quality micro switches for industrial applications',
+                category: 'Switches'
+              }">
+            </app-product-card>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <app-product-card 
+              [product]="{
+                id: 2,
+                name: 'PID Controllers',
+                image: 'https://images.pexels.com/photos/159299/graphic-design-studio-tracery-pattern-159299.jpeg',
+                price: '₹8,500',
+                description: 'Advanced PID controllers for precise temperature control',
+                category: 'Controllers'
+              }">
+            </app-product-card>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <app-product-card 
+              [product]="{
+                id: 3,
+                name: 'Humidity Sensors',
+                image: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg',
+                price: '₹3,600',
+                description: 'Accurate humidity sensors for environmental monitoring',
+                category: 'Sensors'
+              }">
+            </app-product-card>
+          </div>
+        </div> -->
+        
+        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+          <a routerLink="/products" class="btn btn-primary">View All Products</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="stat-number" [attr.data-count]="1500">0</h3>
+              <p class="stat-title">Happy Clients</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3 class="stat-number" [attr.data-count]="800">0</h3>
+              <p class="stat-title">Projects Completed</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h3 class="stat-number" [attr.data-count]="250">0</h3>
+              <p class="stat-title">Products</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3 class="stat-number" [attr.data-count]="25">0</h3>
+              <p class="stat-title">Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-aos="fade-up">What Our Clients Say</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Testimonials from our satisfied customers</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>"We've been using Hilton MicroSwitch products for over 5 years. Their quality and reliability are exceptional, and their customer service is outstanding."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="John Smith">
+                </div>
+                <div class="author-info">
+                  <h5>John Smith</h5>
+                  <p>Technical Director, TechSolutions Ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>"The humidity sensors we purchased from Hilton MicroSwitch have been incredibly accurate and reliable. Their team was very helpful in selecting the right products for our needs."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Sarah Johnson">
+                </div>
+                <div class="author-info">
+                  <h5>Sarah Johnson</h5>
+                  <p>Operations Manager, Climate Control Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"The PID controllers from Hilton MicroSwitch have significantly improved our manufacturing process efficiency. Excellent products backed by knowledgeable support."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Rajiv Mehta">
+                </div>
+                <div class="author-info">
+                  <h5>Rajiv Mehta</h5>
+                  <p>Production Head, Precision Engineering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content text-center" data-aos="fade-up">
+          <h2>Ready to Enhance Your Automation Systems?</h2>
+          <p>Contact us today to discuss how our products can improve your operations.</p>
+          <div class="cta-buttons">
+            <a routerLink="/contact" class="btn btn-primary me-3">Contact Us</a>
+            <a href="tel:+911234567890" class="btn btn-secondary">
+              <i class="fas fa-phone-alt me-2"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -8,6 +8,11 @@ import { HomeComponentComponent } from './component/home-component/home-componen
 import { FooterComponent } from './component/footer/footer.component';
 import { WhatsappToggleComponent } from './component/whatsapp-toggle/whatsapp-toggle.component';
 import { ProductsComponent } from './component/products/products.component';
+import { AboutComponent } from './component/about/about.component';
+import { ContactUsComponent } from './component/contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,17 @@ import { ProductsComponent } from './component/products/products.component';
     HomeComponentComponent,
     FooterComponent,
     WhatsappToggleComponent,
-    ProductsComponent
+    ProductsComponent,
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
