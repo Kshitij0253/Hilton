@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://spring-hilton.onrender.com'
+  apiUrl: 'https://spring-hilton.onrender.com/api/contact/submit'
 };
 
 /*
