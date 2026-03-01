@@ -11,8 +11,9 @@
     }
     
     .navbar-logo {
-      height: 50px;
+      height: 80px;
       width: auto;
+      border-radius: 50% ;
       transition: var(--transition);
     }
     
@@ -111,3 +112,5 @@
         margin-left: 0;
       }
     }
+
+    
